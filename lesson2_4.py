@@ -3,5 +3,5 @@
 # только первые 10 букв в слове
 
 str = input("Введите строку из слов, разделенных пробелами: ")
-for el in str.split():
-    print(el[:10])
+for el in enumerate(str.split(), start=1):
+    print(f"{el[0]}. {el[1][:10]}")
